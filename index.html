@@ -151,42 +151,85 @@
     </ul>
   </div>
 
-  <div class="slide" id="current-state">
+  <div class="slide" id="server">
     <h2>
-      The Solid server and several apps exist<br>
-      and are usable for developers.
+      The Solid server acts as a data pod<br>
+      that stores and guards your data.
     </h2>
     <ul>
-      <li>
-        <a href="https://github.com/solid/node-solid-server/">Solid server</a>
-        <ul class="next">
-          <li>store your data online with access control</li>
-          <li>
-            free storage at
-            <a href="https://solid.community/">solid.community</a>
-            and
-            <a href="https://inrupt.net/">inrupt.net</a>
-          </li>
+      <li class="next">
+       Your Solid data pod is a regular Web server.
+        <ul>
+          <li class="next">a file server</li>
+          <li class="next">with LDP support</li>
+          <li class="next">with OpenID Connect authentication (OIDC)</li>
         </ul>
       </li>
-      <li>
-        apps
-        <ul class="next inline">
-          <li><a href="https://github.com/linkeddata/mashlib">data browser</a></li>
-          <li>contacts</li>
-          <li>photos</li>
-          <li>meeting organizer</li>
-          <li>…</li>
+      <li class="next">
+        Your Solid data pod is application-agnostic.
+        <ul>
+          <li>All application-specific logic resides in clients.</li>
         </ul>
       </li>
-      <li>
-        libraries
-        <ul class="next inline">
-          <li><a href="https://github.com/solid/solid-auth-client">authentication</a></li>
-          <li><a href="https://github.com/linkeddata/rdflib.js/">data processing</a></li>
-          <li>…</li>
+      <li class="next">
+        Your Solid data pod is like your website.
+        <ul>
+          <li>Yet your data can be opened with all apps you want.</li>
         </ul>
       </li>
+    </ul>
+  </div>
+
+  <div class="slide" id="data-pod">
+    <h2>
+      A typical data pod can contain<br>
+      any data you create or need online.
+    </h2>
+    <ul>
+      <li>profile 👤</li>
+      <li>photos 🖼</li>
+      <li>comments 🗣</li>
+      <li>… ✨</li>
+    </ul>
+  </div>
+
+  <div class="slide" id="client">
+    <h2>
+      Solid clients are browser or native apps<br>
+      that read from or write to your data pod.
+    </h2>
+    <ul>
+      <li class="next">
+        You give apps permission to parts of your pod.
+        <ul>
+          <li>You can choose very precisely what they can access.</li>
+        </ul>
+      </li>
+      <li class="next">
+        Friends give you permission to parts of their pod.
+        <ul>
+          <li>They can choose very precisely what you can access.</li>
+        </ul>
+      </li>
+      <li class="next">
+        Apps build a unified experience with all that data.
+        <ul>
+          <li>Browse your friends’ pictures along with yours.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="slide" id="apps">
+    <h2>
+      Any app you can envision,<br>
+      you can build with Solid.
+    </h2>
+    <ul>
+      <li>calendar 📅</li>
+      <li>social feed 👥</li>
+      <li>photo sharing 📸</li>
+      <li>… ✨</li>
     </ul>
   </div>
 
