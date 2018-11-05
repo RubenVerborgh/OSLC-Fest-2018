@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Solid: Linked Data for personal data management</title>
+  <title>Solid and OSLC: similar stack, similar goals?</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -10,21 +10,19 @@
 </head>
 <body class="shower list">
   <header class="caption">
-    <h1>Solid: Linked Data for personal data management</h1>
+    <h1>Solid and OSLC: similar stack, similar goals?</h1>
     <p>
-      <a href="https://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a>
-      &amp;
       <a href="https://ruben.verborgh.org/">Ruben Verborgh</a>
     </p>
     <p class="venue">
-      <a href="http://iswc2018.desemweb.org/">DeSemWeb2018</a>, 8 October 2018
+      <a href="http://www.oslcfest.org/">OSLC Fest</a>, 6 November 2018
     </p>
   </header>
 
   <div class="title slide" id="title">
-    <h2>Solid: Linked Data for personal data management</h2>
-    <p class="author">Tim Berners-Lee</p>
+    <h2>Solid and OSLC:<br> similar stack, similar goals?</h2>
     <p class="author">Ruben Verborgh</p>
+    <p class="affiliation">Ghent University – imec</p>
   </div>
 
   <div class="text slide" id="intro">
@@ -242,10 +240,10 @@
     </h2>
     <pre><code><span class="prefix">PREFIX as: &lt;https://www.w3.org/ns/activitystreams#&gt;
 PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
-&lt;#ruben-likes-iswc2018&gt; a as:Like;
+&lt;#ruben-likes-oslcfest&gt; a as:Like;
   as:actor  <mark>&lt;https://ruben.verborgh.org/profile/#me&gt;</mark>;
-  as:object <mark>&lt;http://iswc2018.semanticweb.org/#this&gt;</mark>;
-  as:published "2018-10-08T21:00:00Z"^^xsd:dateTime.</code></pre>
+  as:object <mark>&lt;http://www.oslcfest.org/#this&gt;</mark>;
+  as:published "2018-11-06T08:00:00Z"^^xsd:dateTime.</code></pre>
     <p>
       <strong>Link following</strong> is crucial to make this work.
     </p>
@@ -258,10 +256,10 @@ PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
     </h2>
     <pre><code><span class="prefix">PREFIX as: &lt;https://www.w3.org/ns/activitystreams#&gt;
 PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
-&lt;#ruben-likes-iswc2018&gt; <mark>a as:Like;</mark>
+&lt;#ruben-likes-oslcfest&gt; <mark>a as:Like;</mark>
   <mark>as:actor</mark>  &lt;https://ruben.verborgh.org/profile/#me&gt;;
-  <mark>as:object</mark> &lt;http://iswc2018.semanticweb.org/#this&gt;;
-  <mark>as:published</mark> "2018-10-08T21:00:00Z"^^xsd:dateTime.</code></pre>
+  <mark>as:object</mark> &lt;http://www.oslcfest.org/#this&gt;;
+  <mark>as:published</mark> "2018-11-06T08:00:00Z"^^xsd:dateTime.</code></pre>
   </div>
 
   <div class="slide" id="integration">
@@ -271,14 +269,14 @@ PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
     </h2>
     <pre><code><span class="prefix">PREFIX as: &lt;https://www.w3.org/ns/activitystreams#&gt;
 PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
-&lt;#ruben-likes-iswc2018&gt; a as:Like;
+&lt;#ruben-likes-oslcfest&gt; a as:Like;
   as:actor  &lt;https://ruben.verborgh.org/profile/#me&gt;;
-  as:object &lt;http://iswc2018.semanticweb.org/#this&gt;;
-  as:published "2018-10-08T21:00:00Z"^^xsd:dateTime.
-&lt;#tim-likes-iswc2018&gt; a as:Like;
-  as:actor  &lt;https://www.w3.org/People/Berners-Lee/card#i&gt;;
-  as:object &lt;http://iswc2018.semanticweb.org/#this&gt;;
-  as:published "2018-10-08T21:00:00Z"^^xsd:dateTime.</code></pre>
+  as:object &lt;http://www.oslcfest.org/#this&gt;;
+  as:published "2018-11-06T08:00:00Z"^^xsd:dateTime.
+&lt;#axel-likes-oslcfest&gt; a as:Like;
+  as:actor  &lt;https://www.example.org/people/Axel#i&gt;;
+  as:object &lt;http://www.oslcfest.org/#this&gt;;
+  as:published "2018-11-06T08:00:00Z"^^xsd:dateTime.</code></pre>
   </div>
 
   <div class="slide" id="research">
@@ -430,15 +428,17 @@ person.friends.firstName</code></pre>
     </ul>
   </div>
 
-  <div class="slide" id="end">
-    <h2>
-      Join us at
-      <a href="https://solid.inrupt.com/">solid.inrupt.com</a>!
-    </h2>
+  <div class="title slide" id="end">
+    <h2>Solid and OSLC:<br> similar stack, similar goals?</h2>
+    <p class="author">
+      @RubenVerborgh –
+      <a href="https://ruben.verborgh.org/">ruben.verborgh.org</a>
+    </p>
+    <p class="affiliation">Ghent University – imec</p>
   </div>
 
   <footer>
-    <p class="badge"><a href="https://github.com/RubenVerborgh/Solid-DeSemWeb-2018">View on GitHub</a></p>
+    <p class="badge"><a href="https://github.com/RubenVerborgh/OSLC-Fest-2018">View on GitHub</a></p>
     <p class="license">
       ©2018 <a href="https://ruben.verborgh.org/">Ruben Verborgh</a> –
       Except where otherwise noted,
